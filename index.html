@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Блог о Fraemvork angular</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+			<link rel="stylesheet" href="Стили/layer.css">
+			<link rel="stylesheet" href="Стили/footer.css">
+			<link rel="stylesheet" href="Стили/media.css">
+			<link rel="stylesheet" rev="stylesheet" type="text/css" href="styles.css"/>
+			<link rel="stylesheet" href="Стили/menu.css">
+			<link rel="stylesheet" href="Стили/center.css">
+			<link rel="stylesheet" href="Стили/search.css">	
+			<link rel="stylesheet" href="Стили/top.css">
+			<link rel="stylesheet" href="Стили/top.js">	
+			<link rel="stylesheet" href="Стили/up.css">			
+			<link rel="shortcut icon" href="Картинки\Логотип блога.png">
+			<link rel="stylesheet" href="Стили/boot.css">
+			<script src="Стили/jquery.min.js"></script>
+			<script src="Стили/bootstrap.min.js"></script>
+			<script src="Стили/jquery-git.min.js"></script>
+		</head>
+		<body>
+			<div id="upbutton"></div>
+			<script>
+				$(window).scroll(function() 
+				{
+					if ($(this).scrollTop() > 100) 
+					{
+						if ($('#upbutton').is(':hidden')) 
+						{
+							$('#upbutton').css({opacity : 1}).fadeIn('slow');
+						}
+					} else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+				});
+				$('#upbutton').click(function() 
+				{
+					$('html, body').stop().animate({scrollTop : 0}, 300);
+				});
+			</script>
+			<div class="text">
+				<nav>
+					<ul class="topmenu">
+						<li><a href="index_S.html">Home</a></li>
+						<li><a href="Purchases.html">Shop</a>
+							<ul class="submenu">
+								<li><a href="Purchases.html">Free purchases</a></li>
+								<li><a href="Payment.html">Payment</a></li>
+								<li><a href="Paid.html">Paid</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html">Blog</a>
+							<ul class="submenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="News_H.html">News</a></li>
+								<li><a href="the questions.html">Questions</a></li>
+								<li><a href="filials.html">Filials</a></li>
+							</ul>
+						</li>
+						<li><a href="Log_in.html">Personal Area</a>
+							<ul class="submenu">
+								<li><a href="Registration.html">Registration</a></li>
+								<li><a href="Log_in.html">Log in</a></li>
+							</ul>
+						</li>
+						<li><a href="help.html">Help</a></li>
+					</ul>
+				</nav>
+				<form class="form-search" action="/search/" target="_blank">
+					<input type="hidden" name="searchid" value="808327">
+					<input type="search" name="text" required placeholder="поиск">
+					<input type="image" src="http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"/>  <!-- вместо кнопки submit -->
+				</form>
+				<div class="container-fluid">
+					<div id="pButton" class="col-md-8 col-md-push-3" >
+						<div class="col-sm-9">
+							<h4><small>Последние сообщения</small></h4>
+							<hr>
+							<h2>Framework Angular Blog</h2>
+							<h5><span class="glyphicon glyphicon-time"></span> Отправлено Руслан, 17.12.2019, 10:17.</h5>
+							<h5><span class="label label-danger">Framework angular</span> <span class="label label-danger">Blog</span></h5><br>
+							<div id="pButton" class="col-md-9 col-md-push-3" >
+								<div class = "row">
+										<div class="layer1">
+												<h4>Доброго времени суток читатель, этот блог посвящен моему опыту работы с Framework angular</h4>
+												<img src = "Картинки\anggg.png" class = "img-responsive">
+												<p>Что же такое Fraemvork angular? Fraemvork angular - это фреймворк, написанный на чистом JavaScript и был предназначен для отделения логики приложения от манипуляций с DOM и нацелен на динамическое обновление страниц. Тем не менее, это было не очень навязчиво: вы могли контролировать только часть страницы AngularJS. Эта инфраструктура представила множество мощных функций, позволяющих разработчику довольно легко создавать многофункциональные одностраничные приложения. В частности, была введена интересная концепция привязки данных, которая подразумевала автоматическое обновление представления при изменении модели (данных) и наоборот. Кроме того, была представлена идея директив , которая позволила придумать собственные HTML-теги, воплощенные в жизнь JavaScript. Angular предоставляет такую функциональность, как двустороннее связывание, позволяющее динамически изменять данные в одном месте интерфейса при изменении данных модели в другом, шаблоны, маршрутизация и так далее.
+												Одной из ключевых особенностей Angular является то, что он использует в качестве языка программирования TypeScript. Поэтому перед началом работы рекомендуется ознакомиться с основами данного языка, про которые можно прочитать здесь.
+												Но мы не ограничены языком TypeScript. При желании можем писать приложения на Angular с помощью таких языков как Dart или JavaScript. Однако TypeScript все таки является основным языком для Angular.</p>
+										</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="container-fluid">
+				<div id="pButton" class="col-md-8 col-md-push-3" >
+					<div class="col-sm-9">			
+						<div id="pButton" class="col-md-11 col-md-push-2" >			
+							<div class="col-sm-9">
+								<h4>Оставить свой коментарий:</h4>
+								<div id="container">
+									<form class="mainform" role="form" >
+										<p class="name">
+											<input type="text" class="form-control" rows="3" name="name" value="Имя автора" onblur="if(this.value.length == 0) this.value = 'Имя автора'" onfocus="if(this.value == 'Имя автора') this.value = '' "/>
+										</p>
+										<p class="email">
+											<input type="text" class="form-control" rows="3" name="email" value="name@example.com" onblur="if(this.value.length == 0) this.value = 'name@example.com'" onfocus="if(this.value == 'name@example.com') this.value = '' " />
+										</p>
+										<p class="msg">
+											<textarea name="msg" class="form-control" rows="3" onblur="if(this.value.length == 0) this.value = 'Текст сообщения'" onfocus="if(this.value == 'Текст сообщения') this.value=''">Текст сообщения</textarea>
+										</p>
+										<p class="send" >
+											<input type="submit" class="btn btn-success" Отправить />
+										</p>
+									</form>
+								</div>
+								<p><span class="badge">1</span> Комментарий:</p>
+								<br>
+								<div class="row">
+									<div class="col-sm-2 text-center">
+										<img src = "Картинки\unnamed!!!.png" class = "img-responsive">
+									</div>
+									<div class="col-sm-10">
+										<h4>Максим <small>17.12.2019 14:23</small></h4>
+										<p>Спасибо за описание Framework angular.</p>
+										<br>
+									</div>
+								</div>
+								<br>
+								<p><span class="badge">2</span> Комментарий:</p>
+								<br>
+								<div class="row">
+									<div class="col-sm-2 text-center">
+										<img src = "Картинки\unnamed!!!.png" class = "img-responsive">
+									</div>									
+									<div class="col-xs-10">
+										<h4>Анна <small>17.12.2019,  21:11</small></h4>
+										<p>Надеюсь, что ваш блог продолжит развиваться, удачи.</p>
+										<br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="container-fluid">
+				<p>Страничка создана Русланом Шарафеевым из группы И.С.-233</p>
+			</footer>
+		</body>
+	</html>

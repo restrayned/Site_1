@@ -1,0 +1,11 @@
+  #upbutton {
+    background: url("https://realadmin.ru/assets/images/articles/2014/10/up4.png") no-repeat top left;
+    width: 67px;
+height: 80px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }

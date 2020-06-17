@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Блог о Fraemvork angular</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="Стили/footer filial.css">
+			<link rel="stylesheet" href="Стили/maps.css">
+			<link rel="stylesheet" href="Стили/layer filial.css">
+			<link rel="stylesheet" href="Стили/media.css">
+			<link rel="stylesheet" href="Стили/menu.css">
+			<link rel="stylesheet" href="Стили/center.css">
+			<link rel="stylesheet" href="Стили/search.css">	
+			<link rel="shortcut icon" href="Картинки\Логотип блога.png">
+			<link rel="stylesheet" href="Стили/boot.css">
+			<script src="Стили/jquery.min.js"></script>
+			<script src="Стили/bootstrap.min.js"></script>
+		</head>
+		<body>
+			<div class="text">
+				<nav>
+					<ul class="topmenu">
+						<li><a href="index_S.html">Home</a></li>
+						<li><a href="Purchases.html">Shop</a>
+							<ul class="submenu">
+								<li><a href="Purchases.html">Free purchases</a></li>
+								<li><a href="Payment.html">Payment</a></li>
+								<li><a href="Paid.html">Paid</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html">Blog</a>
+							<ul class="submenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="News_H.html">News</a></li>
+								<li><a href="the questions.html">Questions</a></li>
+								<li><a href="filials.html">Filials</a></li>
+							</ul>
+						</li>
+						<li><a href="Log_in.html">Personal Area</a>
+							<ul class="submenu">
+								<li><a href="Registration.html">Registration</a></li>
+								<li><a href="Log_in.html">Log in</a></li>
+							</ul>
+						</li>
+						<li><a href="help.html">Help</a></li>
+					</ul>
+				</nav>
+				<div class="text">
+					<form class="form-search" action="/search/" target="_blank">
+						<input type="hidden" name="searchid" value="808327">
+						<input type="search" name="text" required placeholder="поиск">
+						<input type="image" src="http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"/>  <!-- вместо кнопки submit -->
+					</form>
+				</div>
+				<div id="pButton" class="col-md-8 col-md-push-3" >
+					<div class="col-sm-9">
+						<hr>
+						<div id="pButton" class="col-md-9 col-md-push-1" >
+							<div class = "row">
+								<div class = "col-sm-4">
+									<div class="layer1">
+										<div class="col-9">
+											<form class="form-horizontal">
+												<h4>Доброго времени суток читатель, сдесь ты можешь авторизоваться</h4>
+												<img src = "Картинки\Personal Area\login.jpg" class = "img-responsive">
+												<br>
+												<div class="form-group">
+													<label for="inputEmail" class="col-xs-2 control-label">Адрес email:</label>
+													<div class="col-xs-10">
+														<input type="email" class="form-control" id="email" name="email" required placeholder="Введите email" />
+													</div>													
+												</div>
+												<div class="form-group">
+													<label for="inputPassword" class="col-xs-2 control-label">Пароль:</label>
+													<div class="col-xs-10">
+														<input type="password" class="form-control" id="password" name="password" required placeholder="Введите пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="checkbox">
+														<label><input type="checkbox"> Запомнить</label>
+													</div>
+												</div>
+												<div class="form-group">
+													<button type="submit" class="btn btn-default">Войти</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>  
+					</div>      
+				</div>
+			</div>
+			<footer class="container-fluid">
+				<p>Страничка создана Русланом Шарафеевым из группы И.С.-233</p>
+			</footer>
+		</body>
+	</html>
