@@ -1,0 +1,8 @@
+    @media screen and (max-width: 767px)
+	{
+      .sidenav {
+        height: auto;
+        padding: 16px;
+      }
+      .row.content {height: auto;}
+    }
