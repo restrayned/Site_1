@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.restrayned.github\.io$ [NC]
+RewriteRule ^(.*)$ https://restrayned.github.io/Site_1/index_S.html/$1 [L,R=301]
